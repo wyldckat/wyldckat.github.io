@@ -1,0 +1,38 @@
+#!/bin/sh
+# Source tutorial run functions
+. $WM_PROJECT_DIR/bin/tools/RunFunctions
+
+nprocs=1
+while getopts "p:" OPTION ; do
+  case $OPTION in
+    p) nprocs=$OPTARG ;;
+    ?) echo "Bad option: $OPTION - exiting" ; exit -1 ;; 
+  esac
+done
+
+runApplication blockMesh
+
+#serial mode
+if [ $nprocs = 1 ] ; then 
+
+  #serial mode
+  runApplication renumberMesh -overwrite #slight improvement in speed
+  runApplication `getApplication`
+
+else
+
+  #parallel mode
+  sed -i "s|^numberOfSubdomains .*|numberOfSubdomains $nprocs;|g" system/decomposeParDict
+  
+  runApplication decomposePar
+  runParallel renumberMesh $nprocs -overwrite #slight improvement in speed
+  runParallel `getApplication` $nprocs 
+
+  #runApplication reconstructParMesh -mergeTol 1e-6 -constant
+  #runApplication reconstructPar
+
+fi
+
+#save logs
+mkdir runtimes_n$nprocs
+cp log.* runtimes_n$nprocs/
