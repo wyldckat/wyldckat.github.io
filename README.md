@@ -1,4 +1,4 @@
-wyldckat.github.io
-==================
+wyldckat.github.io - branch 1055T-vs-7850K
+==========================================
 
-Blog-like repository. Have a look at my wiki, since this page redirects to the (wiki)[./wiki].
+This branch has the files mentioned on this wiki page: https://github.com/wyldckat/wyldckat.github.io/wiki/Testing-AMD-1055T-versus-A10-7850K
