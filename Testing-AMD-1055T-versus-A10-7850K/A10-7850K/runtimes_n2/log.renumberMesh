@@ -1,0 +1,55 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  3.0.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 3.0.x-195caf7479b2
+Exec   : renumberMesh -parallel -overwrite
+Date   : Dec 26 2015
+Time   : 00:31:59
+Host   : "themachine"
+PID    : 22978
+Case   : /home/ofuser/OpenFOAM/ofuser-3.0.x/run/cavity300k
+nProcs : 2
+Slaves : 1("themachine.22979")
+Pstream initialized with:
+    floatTransfer      : 0
+    nProcsSimpleSum    : 0
+    commsType          : nonBlocking
+    polling iterations : 0
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+Mesh size: 302500
+Before renumbering :
+    band           : 275
+    profile        : 8.30368e+07
+
+Using default renumberMethod.
+
+Selecting renumberMethod CuthillMcKee
+
+Reading volScalarField p
+Reading volVectorField U
+
+Renumbering processor cell decomposition map cellProcAddressing
+Renumbering processor face decomposition map faceProcAddressing
+Renumbering processor point decomposition map pointProcAddressing
+After renumbering :
+    band           : 275
+    profile        : 6.93979e+07
+
+Writing mesh to "constant"
+
+
+End
+
+Finalising parallel run

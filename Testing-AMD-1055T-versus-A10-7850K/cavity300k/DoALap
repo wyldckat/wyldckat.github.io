@@ -1,0 +1,7 @@
+#!/bin/sh
+
+for a in 1 2 4 6; do
+  echo "RUNNING WITH $a CORE(S)..."
+  ./Allrun -p $a
+  ./Allclean
+done

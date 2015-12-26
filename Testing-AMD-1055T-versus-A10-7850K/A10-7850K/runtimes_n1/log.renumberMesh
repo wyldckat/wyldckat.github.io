@@ -1,0 +1,45 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  3.0.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 3.0.x-195caf7479b2
+Exec   : renumberMesh -overwrite
+Date   : Dec 26 2015
+Time   : 00:29:55
+Host   : "themachine"
+PID    : 22373
+Case   : /home/ofuser/OpenFOAM/ofuser-3.0.x/run/cavity300k
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+Mesh size: 302500
+Before renumbering :
+    band           : 550
+    profile        : 1.66073e+08
+
+Using default renumberMethod.
+
+Selecting renumberMethod CuthillMcKee
+
+Reading volScalarField p
+Reading volVectorField U
+
+After renumbering :
+    band           : 550
+    profile        : 1.11067e+08
+
+Writing mesh to "constant"
+
+
+End
+

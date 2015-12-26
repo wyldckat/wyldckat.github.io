@@ -1,0 +1,69 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  3.0.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 3.0.x-195caf7479b2
+Exec   : decomposePar
+Date   : Dec 26 2015
+Time   : 00:31:57
+Host   : "themachine"
+PID    : 22967
+Case   : /home/ofuser/OpenFOAM/ofuser-3.0.x/run/cavity300k
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+
+
+Decomposing mesh region0
+
+Create mesh
+
+Calculating distribution of cells
+Selecting decompositionMethod simple
+
+Finished decomposition in 0.16 s
+
+Calculating original mesh data
+
+Distributing cells to processors
+
+Distributing faces to processors
+
+Distributing points to processors
+
+Constructing processor meshes
+
+Processor 0
+    Number of cells = 151250
+    Number of faces shared with processor 1 = 550
+    Number of processor patches = 1
+    Number of processor faces = 550
+    Number of boundary faces = 303600
+
+Processor 1
+    Number of cells = 151250
+    Number of faces shared with processor 0 = 550
+    Number of processor patches = 1
+    Number of processor faces = 550
+    Number of boundary faces = 303600
+
+Number of processor faces = 550
+Max number of cells = 151250 (0% above average 151250)
+Max number of processor patches = 1 (0% above average 1)
+Max number of faces between processors = 550 (0% above average 550)
+
+Time = 0
+
+Processor 0: field transfer
+Processor 1: field transfer
+
+End
+
