@@ -1,0 +1,84 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  3.0.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 3.0.x-195caf7479b2
+Exec   : icoFoam
+Date   : Dec 26 2015
+Time   : 01:23:29
+Host   : "themachine"
+PID    : 5952
+Case   : /home/ofuser/OpenFOAM/ofuser-3.0.x/run/cavity1M
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+
+PISO: Operating solver in PISO mode
+
+Reading transportProperties
+
+Reading field p
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+
+Starting time loop
+
+Time = 2.5e-05
+
+Courant Number mean: 3.64292e-19 max: 8.67362e-15
+smoothSolver:  Solving for Ux, Initial residual = 1, Final residual = 9.98692e-06, No Iterations 192
+smoothSolver:  Solving for Uy, Initial residual = 0, Final residual = 0, No Iterations 0
+DICPCG:  Solving for p, Initial residual = 1, Final residual = 0.490605, No Iterations 1001
+time step continuity errors : sum local = 1.24339e-06, global = -1.70022e-21, cumulative = -1.70022e-21
+DICPCG:  Solving for p, Initial residual = 0.864567, Final residual = 0.0646745, No Iterations 1001
+time step continuity errors : sum local = 3.27999e-07, global = 3.61827e-22, cumulative = -1.33839e-21
+ExecutionTime = 73.47 s  ClockTime = 74 s
+
+Time = 5e-05
+
+Courant Number mean: 0.00301549 max: 0.223811
+smoothSolver:  Solving for Ux, Initial residual = 0.105938, Final residual = 9.81767e-06, No Iterations 219
+smoothSolver:  Solving for Uy, Initial residual = 0.618722, Final residual = 9.65861e-06, No Iterations 274
+DICPCG:  Solving for p, Initial residual = 0.972376, Final residual = 0.295456, No Iterations 1001
+time step continuity errors : sum local = 1.15719e-05, global = -1.08857e-21, cumulative = -2.42696e-21
+DICPCG:  Solving for p, Initial residual = 0.683847, Final residual = 0.342308, No Iterations 1001
+time step continuity errors : sum local = 1.74661e-05, global = -5.41328e-21, cumulative = -7.84024e-21
+ExecutionTime = 152.79 s  ClockTime = 153 s
+
+Time = 7.5e-05
+
+Courant Number mean: 0.00447264 max: 0.252465
+smoothSolver:  Solving for Ux, Initial residual = 0.547373, Final residual = 9.81019e-06, No Iterations 274
+smoothSolver:  Solving for Uy, Initial residual = 0.88503, Final residual = 9.74872e-06, No Iterations 284
+DICPCG:  Solving for p, Initial residual = 0.981571, Final residual = 0.569156, No Iterations 1001
+time step continuity errors : sum local = 0.000375105, global = -1.8284e-20, cumulative = -2.61242e-20
+DICPCG:  Solving for p, Initial residual = 0.871962, Final residual = 0.212111, No Iterations 1001
+time step continuity errors : sum local = 0.000205393, global = -6.69669e-20, cumulative = -9.30911e-20
+ExecutionTime = 235.07 s  ClockTime = 236 s
+
+Time = 0.0001
+
+Courant Number mean: 0.00756167 max: 0.253676
+smoothSolver:  Solving for Ux, Initial residual = 0.87867, Final residual = 9.64401e-06, No Iterations 284
+smoothSolver:  Solving for Uy, Initial residual = 0.98171, Final residual = 9.9702e-06, No Iterations 288
+DICPCG:  Solving for p, Initial residual = 0.98475, Final residual = 0.24852, No Iterations 1001
+time step continuity errors : sum local = 0.00220818, global = 5.29396e-21, cumulative = -8.77972e-20
+DICPCG:  Solving for p, Initial residual = 0.818453, Final residual = 0.350575, No Iterations 1001
+time step continuity errors : sum local = 0.00397627, global = 2.65677e-19, cumulative = 1.7788e-19
+ExecutionTime = 317.38 s  ClockTime = 318 s
+
+End
+

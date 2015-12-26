@@ -1,0 +1,69 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  3.0.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 3.0.x-195caf7479b2
+Exec   : decomposePar
+Date   : Dec 26 2015
+Time   : 01:29:00
+Host   : "themachine"
+PID    : 7383
+Case   : /home/ofuser/OpenFOAM/ofuser-3.0.x/run/cavity1M
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+
+
+Decomposing mesh region0
+
+Create mesh
+
+Calculating distribution of cells
+Selecting decompositionMethod simple
+
+Finished decomposition in 0.55 s
+
+Calculating original mesh data
+
+Distributing cells to processors
+
+Distributing faces to processors
+
+Distributing points to processors
+
+Constructing processor meshes
+
+Processor 0
+    Number of cells = 500000
+    Number of faces shared with processor 1 = 1000
+    Number of processor patches = 1
+    Number of processor faces = 1000
+    Number of boundary faces = 1002000
+
+Processor 1
+    Number of cells = 500000
+    Number of faces shared with processor 0 = 1000
+    Number of processor patches = 1
+    Number of processor faces = 1000
+    Number of boundary faces = 1002000
+
+Number of processor faces = 1000
+Max number of cells = 500000 (0% above average 500000)
+Max number of processor patches = 1 (0% above average 1)
+Max number of faces between processors = 1000 (0% above average 1000)
+
+Time = 0
+
+Processor 0: field transfer
+Processor 1: field transfer
+
+End
+

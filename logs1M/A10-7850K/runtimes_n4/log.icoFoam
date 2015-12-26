@@ -1,0 +1,98 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  3.0.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 3.0.x-195caf7479b2
+Exec   : icoFoam -parallel
+Date   : Dec 26 2015
+Time   : 01:33:12
+Host   : "themachine"
+PID    : 8460
+Case   : /home/ofuser/OpenFOAM/ofuser-3.0.x/run/cavity1M
+nProcs : 4
+Slaves : 
+3
+(
+"themachine.8461"
+"themachine.8462"
+"themachine.8463"
+)
+
+Pstream initialized with:
+    floatTransfer      : 0
+    nProcsSimpleSum    : 0
+    commsType          : nonBlocking
+    polling iterations : 0
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+
+PISO: Operating solver in PISO mode
+
+Reading transportProperties
+
+Reading field p
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+
+Starting time loop
+
+Time = 2.5e-05
+
+Courant Number mean: 3.64292e-19 max: 8.67362e-15
+smoothSolver:  Solving for Ux, Initial residual = 1, Final residual = 9.94978e-06, No Iterations 193
+smoothSolver:  Solving for Uy, Initial residual = 0, Final residual = 0, No Iterations 0
+DICPCG:  Solving for p, Initial residual = 1, Final residual = 0.225434, No Iterations 1001
+time step continuity errors : sum local = 5.84909e-07, global = -1.91906e-22, cumulative = -1.91906e-22
+DICPCG:  Solving for p, Initial residual = 0.853923, Final residual = 0.0684141, No Iterations 1001
+time step continuity errors : sum local = 2.81564e-07, global = 6.38583e-22, cumulative = 4.46678e-22
+ExecutionTime = 50.25 s  ClockTime = 52 s
+
+Time = 5e-05
+
+Courant Number mean: 0.00301515 max: 0.223808
+smoothSolver:  Solving for Ux, Initial residual = 0.100511, Final residual = 9.65382e-06, No Iterations 218
+smoothSolver:  Solving for Uy, Initial residual = 0.595287, Final residual = 9.99314e-06, No Iterations 273
+DICPCG:  Solving for p, Initial residual = 0.966175, Final residual = 0.512202, No Iterations 1001
+time step continuity errors : sum local = 1.31999e-05, global = 2.64698e-22, cumulative = 7.11375e-22
+DICPCG:  Solving for p, Initial residual = 0.638495, Final residual = 0.419253, No Iterations 1001
+time step continuity errors : sum local = 1.72535e-05, global = -2.11758e-21, cumulative = -1.40621e-21
+ExecutionTime = 105.91 s  ClockTime = 109 s
+
+Time = 7.5e-05
+
+Courant Number mean: 0.00436967 max: 0.25226
+smoothSolver:  Solving for Ux, Initial residual = 0.614977, Final residual = 9.93006e-06, No Iterations 278
+smoothSolver:  Solving for Uy, Initial residual = 0.932034, Final residual = 9.71931e-06, No Iterations 287
+DICPCG:  Solving for p, Initial residual = 0.985694, Final residual = 0.408614, No Iterations 1001
+time step continuity errors : sum local = 0.00030982, global = -3.34578e-20, cumulative = -3.4864e-20
+DICPCG:  Solving for p, Initial residual = 0.877988, Final residual = 0.0028123, No Iterations 1001
+time step continuity errors : sum local = 2.96338e-06, global = -9.48942e-21, cumulative = -4.43534e-20
+ExecutionTime = 162.77 s  ClockTime = 167 s
+
+Time = 0.0001
+
+Courant Number mean: 0.00582387 max: 0.252546
+smoothSolver:  Solving for Ux, Initial residual = 0.874023, Final residual = 9.81945e-06, No Iterations 285
+smoothSolver:  Solving for Uy, Initial residual = 0.988075, Final residual = 9.68094e-06, No Iterations 290
+DICPCG:  Solving for p, Initial residual = 0.988285, Final residual = 0.451117, No Iterations 1001
+time step continuity errors : sum local = 0.00270942, global = 6.77626e-19, cumulative = 6.33273e-19
+DICPCG:  Solving for p, Initial residual = 0.734576, Final residual = 0.316028, No Iterations 1001
+time step continuity errors : sum local = 0.00297929, global = 4.66207e-18, cumulative = 5.29534e-18
+ExecutionTime = 220.07 s  ClockTime = 226 s
+
+End
+
+Finalising parallel run
